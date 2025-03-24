@@ -18,10 +18,6 @@ const Note = db.define("note",{
     type: DataTypes.BOOLEAN,
     defaultValue: false,
   },
-  archived: {
-    type: DataTypes.BOOLEAN,
-    defaultValue: false,
-  },
   createdAt: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,

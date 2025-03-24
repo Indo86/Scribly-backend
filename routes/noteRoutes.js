@@ -4,10 +4,7 @@ import {
   getNoteById,
   createNote,
   updateNote,
-  deleteNote,
-  togglePin,
-  toggleBookmark,
-  toggleArchive,      
+  deleteNote, 
 } from "../controllers/noteController.js";
 
 
@@ -18,8 +15,5 @@ router.get("/:id", getNoteById);
 router.post("/", createNote);
 router.put("/:id", updateNote);
 router.delete("/:id", deleteNote);
-router.patch("/:id/pin", togglePin);
-router.patch("/:id/bookmark", toggleBookmark);
-router.patch("/:id/archive", toggleArchive);
 
 export default router;

@@ -6,6 +6,5 @@ Content-Type: application/json
     "text": "Mengunjungi Yogyakarta untuk riset lapangan",
     "pinned": false,
     "bookmarked": true,
-    "archived": false,
     "createdAt": "2025-03-23T15:00:00Z"
 }

@@ -63,16 +63,3 @@ export const deleteTodo = async (req, res) => {
   }
 };
 
-// Toggle todo completion status
-export const toggleComplete = async (req, res) => {
-  try {
-    const todo = await Todo.findByPk(req.params.id);
-    if (!todo) {
-      return res.status(404).json({ message: "Todo not found" });
-    }
-    await todo.update({ completed: !todo.completed });
-    res.json(todo);
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-};
